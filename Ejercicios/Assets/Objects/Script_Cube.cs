@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Script_Cube : MonoBehaviour
 {
-    public GameObject objeto;
-    public Numero_ScriptObj numeroScriptObj;
+    [SerializeField] public GameObject objeto;
+    [SerializeField] public Numero_ScriptObj numeroScriptObj;
+    //[SerializeField] private int cant;
     
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 2; i++)
+        
+        for (var i = 1; i < numeroScriptObj.numero ; i++)
         {
-            Instantiate(objeto);
+            Instantiate(objeto, new Vector3(Random.Range(0f, 8f), Random.Range(0f, 8f), Random.Range(0f, 8f)), Quaternion.identity);
         }
+        // Vector3 posicion = new Vector3(Random.Range(0f, 8f), Random.Range(0f, 8f), Random.Range(0f, 8f));
+        // Instantiate(objeto, posicion, Quaternion.identity);
         
     }
 
