@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3044214d9b71a34eaf4c567f963be1e, type: 3}
   m_Name: N_Veces
   m_EditorClassIdentifier: 
-  numero: 5
+  cantidadObjetos: 5

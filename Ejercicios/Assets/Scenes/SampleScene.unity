@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto: {fileID: 7463380506917789244, guid: 26291c5c709c11d4692bb5af77e8e313, type: 3}
-  numeroScriptObj: {fileID: 11400000, guid: ad1fb3b62e31fcd47bdf79c3415496d2, type: 2}
+  cantidadCubos: {fileID: 11400000, guid: ad1fb3b62e31fcd47bdf79c3415496d2, type: 2}
 --- !u!4 &323829191
 Transform:
   m_ObjectHideFlags: 0
