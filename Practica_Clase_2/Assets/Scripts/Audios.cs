@@ -6,13 +6,16 @@ using UnityEngine;
 
 public class Audios : MonoBehaviour
 {
-    private AudioSource[] audios = new AudioSource[3];
+    [SerializeField] private AudioClip[] audios = new AudioClip[3];
+
+    [SerializeField] private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        audios.Append(Resources.Load("Music/02. Risk of Rain 2"));
-        audios.Append(Resources.Load("Music/bakemonogatari Ost 23 Kotoba no Bouryoku"));
-        audios.Append(Resources.Load("Music/Guilty Gear 2 Overture - Diva (Valentine\u00b4s Final Form theme Boss) - OST"));
+        audioSource = GetComponent<AudioSource>();
+        // audios.Append(Resources.Load("Music/02. Risk of Rain 2"));
+        // audios.Append(Resources.Load("Music/bakemonogatari Ost 23 Kotoba no Bouryoku"));
+        // audios.Append(Resources.Load("Music/Guilty Gear 2 Overture - Diva (Valentine\u00b4s Final Form theme Boss) - OST"));
     }
     
     // Update is called once per frame
@@ -20,7 +23,13 @@ public class Audios : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            audios[0].Play();
+            audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
+            Debug.Log(audios.Length);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            
         }
     }
 }
