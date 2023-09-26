@@ -32,6 +32,10 @@ public class Audios : MonoBehaviour
             {
                 audioSource.Pause();
             }
+            else
+            {
+                audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
+            }
         } else if (Input.GetMouseButtonDown(2))
         {
             if (audioSource.isPlaying)
