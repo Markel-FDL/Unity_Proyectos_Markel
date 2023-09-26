@@ -21,7 +21,7 @@ public class Audios : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&& !audioSource.isPlaying)
         {
             audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
             audioSource.loop = true;
@@ -35,6 +35,7 @@ public class Audios : MonoBehaviour
             else
             {
                 audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
+                audioSource.loop = true;
             }
         } else if (Input.GetMouseButtonDown(2))
         {
