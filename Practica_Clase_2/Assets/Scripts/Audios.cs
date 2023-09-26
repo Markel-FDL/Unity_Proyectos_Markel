@@ -24,12 +24,22 @@ public class Audios : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
+            audioSource.loop = true;
             Debug.Log(audios.Length);
-        }
-
-        if (Input.GetMouseButtonDown(1))
+        }else if (Input.GetMouseButtonDown(1))
         {
-            
+            if (audioSource.isPlaying)
+            {
+                audioSource.Pause();
+            }
+        } else if (Input.GetMouseButtonDown(2))
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
+        
+        
     }
 }
