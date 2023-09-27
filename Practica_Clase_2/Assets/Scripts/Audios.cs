@@ -10,6 +10,8 @@ public class Audios : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     // Start is called before the first frame update
+
+    [SerializeField] private bool activo = false;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -21,11 +23,10 @@ public class Audios : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)&& !audioSource.isPlaying)
+        if (Input.GetMouseButtonDown(0) && !audioSource.isPlaying)
         {
-            audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
-            audioSource.loop = true;
-            Debug.Log(audios.Length);
+            ClickIzquierdo();
+            
         }else if (Input.GetMouseButtonDown(1))
         {
             if (audioSource.isPlaying)
@@ -34,15 +35,25 @@ public class Audios : MonoBehaviour
             }
             else
             {
-                audioSource.PlayOneShot(audios[Random.Range(0,audios.Length)]);
-                audioSource.loop = true;
+                audioSource.UnPause();
             }
         } else if (Input.GetMouseButtonDown(2))
         {
-            if (audioSource.isPlaying)
-            {
                 audioSource.Stop();
-            }
+                activo = false;
+        }
+        
+        
+    }
+
+    void ClickIzquierdo()
+    {
+        if (!activo)
+        {
+            audioSource.clip = audios[Random.Range(0, audios.Length)];
+            audioSource.Play();
+            activo = true;
+            Debug.Log(audios.Length);
         }
         
         
