@@ -207,7 +207,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.7
+  m_fontSize: 33.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.35
+  m_fontSize: 32.4
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -570,7 +570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000013950319, y: 8.099976}
+  m_AnchoredPosition: {x: 0.00067976536, y: 8.100098}
   m_SizeDelta: {x: -4, y: 119}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &785976694
@@ -747,10 +747,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2400, y: 1800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -838,10 +838,10 @@ RectTransform:
   - {fileID: 1433135749}
   m_Father: {fileID: 858376473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39463696, y: 0.19362155}
-  m_AnchorMax: {x: 0.60400003, y: 0.6208199}
-  m_AnchoredPosition: {x: -0.5, y: 2}
-  m_SizeDelta: {x: -69, y: -146}
+  m_AnchorMin: {x: 0.39600003, y: 0.215}
+  m_AnchorMax: {x: 0.60200006, y: 0.60400003}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -64, y: -122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861041077
 MonoBehaviour:
@@ -872,7 +872,19 @@ MonoBehaviour:
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1520029542}
+        m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
+        m_MethodName: CambiarEscena2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &861041078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +936,7 @@ GameObject:
   - component: {fileID: 864977966}
   - component: {fileID: 864977965}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,7 +959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.063, y: 0.4166667}
   m_AnchorMax: {x: 0.94500005, y: 0.5166667}
-  m_AnchoredPosition: {x: -0.9833832, y: 0.7000122}
+  m_AnchoredPosition: {x: -0.98339844, y: 0.7001953}
   m_SizeDelta: {x: 0, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &864977965
@@ -972,10 +984,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.6431373, g: 0.49019608, b: 0.20784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.6156863, b: 0.003921569, a: 1}
+    m_SelectedColor: {r: 0.7254902, g: 0.050980393, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0.44313726, g: 0.42352942, b: 0.42352942, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -993,7 +1005,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 864977966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1520029542}
+        m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
+        m_MethodName: CambiarEscena4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &864977966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1230,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.2
+  m_fontSize: 31.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1269,7 +1293,7 @@ GameObject:
   - component: {fileID: 1072333881}
   - component: {fileID: 1072333880}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1292,7 +1316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.063, y: 0.84000003}
   m_AnchorMax: {x: 0.94500005, y: 0.94000006}
-  m_AnchoredPosition: {x: -0.9832611, y: 0}
+  m_AnchoredPosition: {x: -0.98339844, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072333880
@@ -1317,10 +1341,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.6415094, g: 0.49138337, b: 0.20879316, a: 1}
+    m_PressedColor: {r: 1, g: 0.61542684, b: 0.0047169924, a: 1}
+    m_SelectedColor: {r: 0.7264151, g: 0.051397286, b: 0.051397286, a: 1}
+    m_DisabledColor: {r: 0.4433962, g: 0.4245728, b: 0.4245728, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1338,7 +1362,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1072333881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1520029542}
+        m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
+        m_MethodName: CambiarEscena1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1072333881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,8 +1606,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1420204450}
   m_HandleRect: {fileID: 1420204449}
   m_Direction: 2
-  m_Value: 0.931933
-  m_Size: 0.6680368
+  m_Value: 0.931932
+  m_Size: 0.72760814
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1648,7 +1684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21900001, y: 0.77532214}
   m_AnchorMax: {x: 0.772, y: 0.95100003}
-  m_AnchoredPosition: {x: 7.999695, y: 28.5}
+  m_AnchoredPosition: {x: 8, y: 28.5}
   m_SizeDelta: {x: -612, y: -101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483901149
@@ -1698,7 +1734,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.55
+  m_fontSize: 72
   m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1748,6 +1784,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483901147}
   m_CullTransparentMesh: 1
+--- !u!1 &1520029541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520029543}
+  - component: {fileID: 1520029542}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1520029542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520029541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd7fdc59c341834295202696a6bda61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Escena1: {fileID: 0}
+  Escena2: {fileID: 0}
+  Escena3: {fileID: 0}
+  Escena4: {fileID: 0}
+  NombreEscena1: Escena1
+  NombreEscena2: Escena2
+  NombreEscena3: Escena3
+  NombreEscena4: Escena4
+--- !u!4 &1520029543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520029541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.5249, y: 271.95016, z: 1.9531705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753339987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1956,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.8
+  m_fontSize: 32.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1931,7 +2019,7 @@ GameObject:
   - component: {fileID: 2031977436}
   - component: {fileID: 2031977435}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1954,7 +2042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.063, y: 0.7133633}
   m_AnchorMax: {x: 0.94500005, y: 0.7996368}
-  m_AnchoredPosition: {x: -0.98283386, y: -0.3999939}
+  m_AnchoredPosition: {x: -0.98291016, y: -0.39990234}
   m_SizeDelta: {x: 0, y: -0.9999962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031977435
@@ -1979,10 +2067,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.6431373, g: 0.49019608, b: 0.20784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.6156863, b: 0.003921569, a: 1}
+    m_SelectedColor: {r: 0.7254902, g: 0.050980393, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0.44313726, g: 0.42352942, b: 0.42352942, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2052,7 +2140,7 @@ GameObject:
   - component: {fileID: 2109050435}
   - component: {fileID: 2109050434}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2075,7 +2163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.063, y: 0.5666667}
   m_AnchorMax: {x: 0.94500005, y: 0.6666667}
-  m_AnchoredPosition: {x: -0.9833832, y: -0.6999512}
+  m_AnchoredPosition: {x: -0.98339844, y: -0.7001953}
   m_SizeDelta: {x: 0, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109050434
@@ -2100,10 +2188,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.6431373, g: 0.49019608, b: 0.20784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.6156863, b: 0.003921569, a: 1}
+    m_SelectedColor: {r: 0.7254902, g: 0.050980393, b: 0.050980393, a: 1}
+    m_DisabledColor: {r: 0.44313726, g: 0.42352942, b: 0.42352942, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2121,7 +2209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109050435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1520029542}
+        m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
+        m_MethodName: CambiarEscena3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2109050435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,3 +2359,4 @@ SceneRoots:
   - {fileID: 2140573274}
   - {fileID: 858376473}
   - {fileID: 768741554}
+  - {fileID: 1520029543}
