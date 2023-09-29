@@ -6,10 +6,10 @@ using UnityEngine.UIElements;
 
 public class UI_Script : MonoBehaviour
 {
-    [SerializeField] private Escena1 Escena1;
-    [SerializeField] private Escena1 Escena2;
-    [SerializeField] private Escena1 Escena3;
-    [SerializeField] private Escena1 Escena4;
+    [SerializeField] private EscenaVolver Escena1;
+    [SerializeField] private EscenaVolver Escena2;
+    [SerializeField] private EscenaVolver Escena3;
+    [SerializeField] private EscenaVolver Escena4;
 
     public string NombreEscena1 = "Escena1";
     public string NombreEscena2 = "Escena2";

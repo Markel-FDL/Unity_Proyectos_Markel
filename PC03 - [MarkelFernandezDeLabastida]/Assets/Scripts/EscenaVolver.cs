@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Escena1 : MonoBehaviour
+public class EscenaVolver: MonoBehaviour
 {
     public string escena = "SampleScene";
     // Start is called before the first frame update
