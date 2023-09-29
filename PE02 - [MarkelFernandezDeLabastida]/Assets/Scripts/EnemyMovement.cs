@@ -10,13 +10,16 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float velocidad;
     [SerializeField] private float rango;
     [SerializeField] private float distancia_Maxima;
+    [SerializeField] private float _fuerza = 200f;
+    [SerializeField] private Rigidbody2D _rigidbody2D;
 
     [SerializeField]private Vector2 direccion;
     // Start is called before the first frame update
     void Start()
     {
-        
-        FijarNuevoDestino();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        //transform.position = new Vector2(7f, -3f);
+        _rigidbody2D.AddForce(new Vector2(Random.Range(8f, 15f), Random.Range(8f, 15f)) * _fuerza);
     }
 
     // Update is called once per frame
@@ -27,16 +30,21 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, direccion, velocidad);
-        if (Vector2.Distance(transform.position, direccion) < rango)
+        
         {
-            FijarNuevoDestino();
+            
+          //  FijarNuevoDestino();
         }
     }
     
-    void FijarNuevoDestino()
-    {
-        direccion = new Vector2(Random.Range(-distancia_Maxima, distancia_Maxima),
-            Random.Range(-distancia_Maxima, distancia_Maxima));
-    }
+    
 }
+
+// transform.position = Vector2.MoveTowards(transform.position, direccion, velocidad);
+// if (Vector2.Distance(transform.position, direccion) < rango)
+
+// void FijarNuevoDestino()
+// {
+//     direccion = new Vector2(Random.Range(-distancia_Maxima, distancia_Maxima),
+//         Random.Range(-distancia_Maxima, distancia_Maxima));
+// }

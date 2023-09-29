@@ -101,8 +101,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionRaton: {x: 0, y: 0, z: 0}
   RigidBody: {fileID: 0}
+  _collider2D: {fileID: 0}
+  _renderer2D: {fileID: 0}
   direccion: {x: 0, y: 0}
   velocidadMovimiento: 0.5
+  vidas: 3
+  gameOver: {fileID: 0}
 --- !u!61 &1752421774728183597
 BoxCollider2D:
   m_ObjectHideFlags: 0

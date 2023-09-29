@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8857332206102873732}
   - component: {fileID: -5886328947751420535}
   - component: {fileID: 2055404105782966127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Unity_CEO
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -174,4 +174,6 @@ MonoBehaviour:
   velocidad: 0.2
   rango: 5
   distancia_Maxima: 15
+  _fuerza: 20
+  _rigidbody2D: {fileID: 0}
   direccion: {x: 0, y: 0}

@@ -10,7 +10,9 @@ public class Spawn_enemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(objeto, new Vector3(Random.Range(2f, 6f), Random.Range(2f, 6f), 0), quaternion.identity);
+        Instantiate(objeto, new Vector3(7f, -3), quaternion.identity);
+        Instantiate(objeto, new Vector3(-7f, 3f), quaternion.identity);
+        Instantiate(objeto, new Vector3(-6f, 0f), quaternion.identity);
     }
 
     // Update is called once per frame
