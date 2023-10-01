@@ -12,12 +12,14 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float distancia_Maxima;
     [SerializeField] private float _fuerza = 200f;
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private AudioSource _audioSource;
 
     [SerializeField]private Vector2 direccion;
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
         //transform.position = new Vector2(7f, -3f);
         _rigidbody2D.AddForce(new Vector2(Random.Range(8f, 15f), Random.Range(8f, 15f)) * _fuerza);
     }
@@ -36,8 +38,15 @@ public class EnemyMovement : MonoBehaviour
           //  FijarNuevoDestino();
         }
     }
-    
-    
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Barreras"))
+        {
+            _audioSource.Play();
+            _audioSource.loop = false;
+        }
+    }
 }
 
 // transform.position = Vector2.MoveTowards(transform.position, direccion, velocidad);
