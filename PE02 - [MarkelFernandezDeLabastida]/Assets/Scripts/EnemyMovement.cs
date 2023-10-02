@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
-        //transform.position = new Vector2(7f, -3f);
+        //Empuja aleatoriamente a los enemigos al iniciar la partida
         _rigidbody2D.AddForce(new Vector2(Random.Range(8f, 15f), Random.Range(8f, 15f)) * _fuerza);
     }
 
@@ -38,7 +38,8 @@ public class EnemyMovement : MonoBehaviour
           //  FijarNuevoDestino();
         }
     }
-
+    
+    // Cuando el enemigo choque contra los muros sonara el clip de sonido de rebote 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Barreras"))

@@ -19,6 +19,7 @@ public class VidasScript : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Muestra las vidas restantes en pantalla
     void Update()
     {
         _texto_vidas.text = "Vidas: " + objectMovement.vidas.ToString();

@@ -1086,6 +1086,14 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 56931197}
+    - target: {fileID: 339781843406247290, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
+      propertyPath: clip.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 339781843406247290, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
+      propertyPath: clip.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3111b2f405099e34e9598b17a7bc3461, type: 3}
     - target: {fileID: 1412113167626945888, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.024389982
@@ -1124,6 +1132,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1412113167626945888, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752421774728183597, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2362224480330693615, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
@@ -1867,6 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto: {fileID: 7339520463915174697, guid: 7de731eacf47c2b4481c55e9ba53f66c, type: 3}
+  powerUp: {fileID: 709711039660681447, guid: 53a7c983e73f5ac489d9b3fcf2fe04b5, type: 3}
 --- !u!114 &1973518408 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 339781843406247290, guid: 6cc8e881be8e7744b849f6c73959fee7, type: 3}
@@ -2034,10 +2047,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 230507973}
   - {fileID: 1611410848}
   - {fileID: 684421402}
   - {fileID: 428709584}
   - {fileID: 1371621086}
   - {fileID: 623858717}
-  - {fileID: 230507973}
   - {fileID: 740372859}

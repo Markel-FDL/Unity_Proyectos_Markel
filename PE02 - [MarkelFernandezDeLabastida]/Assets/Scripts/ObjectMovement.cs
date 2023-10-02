@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,6 +47,29 @@ public class ObjectMovement : MonoBehaviour
         RigidBody.MovePosition(direccion);
     }
 
+    // Cuando el jugador choque con el power up, sonará el audio de PowerUp y ejecutará el coroutine donde 
+    // reduce el tamaño del jugador durante 5 segundos
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("PowerUp"))
+        {
+            _audioSource.clip = clip[2];
+            _audioSource.Play();
+            StartCoroutine(PowerUp());
+            Destroy(other.gameObject);
+        }
+        
+    }
+
+    IEnumerator PowerUp()
+    {
+        transform.localScale = new Vector2(0.25f, 0.25f);
+        yield return new WaitForSeconds(5f);
+        transform.localScale = new Vector2(0.5f, 0.5f);
+    }
+    
+    // Cuando el jugador choque con el enemigo, sonará el clip de hitmarker y reducira la vida en 1 lanzando 
+    // un coroutine haciendo al jugador invencible durante 1 segundo.
     private void OnCollisionEnter2D(Collision2D enemigo)
     {
         if (enemigo.gameObject.CompareTag("Enemy") && vidas > 1)

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Barreras
+  - PowerUp
   layers:
   - Default
   - TransparentFX

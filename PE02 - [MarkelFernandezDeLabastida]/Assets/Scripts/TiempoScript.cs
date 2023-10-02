@@ -15,6 +15,7 @@ public class TiempoScript : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Muestra el tiempo transcurrido de partida en partida.
     void Update()
     {
         tiempo += Time.deltaTime;
