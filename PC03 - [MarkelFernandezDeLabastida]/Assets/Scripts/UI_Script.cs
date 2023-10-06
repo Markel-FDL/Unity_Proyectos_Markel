@@ -6,15 +6,6 @@ using UnityEngine.UIElements;
 
 public class UI_Script : MonoBehaviour
 {
-    [SerializeField] private EscenaVolver Escena1;
-    [SerializeField] private EscenaVolver Escena2;
-    [SerializeField] private EscenaVolver Escena3;
-    [SerializeField] private EscenaVolver Escena4;
-
-    public string NombreEscena1 = "Escena1";
-    public string NombreEscena2 = "Escena2";
-    public string NombreEscena3 = "Escena3";
-    public string NombreEscena4 = "Escena4";
     // Start is called before the first frame update
     void Start()
     {
@@ -26,24 +17,8 @@ public class UI_Script : MonoBehaviour
     {
         
     }
-
-    public void CambiarEscena1()
+    public void CambiarEscena(string nombre)
     {
-        SceneManager.LoadScene(NombreEscena1);
-    }
-    
-    public void CambiarEscena2()
-    {
-        SceneManager.LoadScene(NombreEscena2);
-    }
-    
-    public void CambiarEscena3()
-    {
-        SceneManager.LoadScene(NombreEscena3);
-    }
-    
-    public void CambiarEscena4()
-    {
-        SceneManager.LoadScene(NombreEscena4);
+        SceneManager.LoadScene(nombre);
     }
 }

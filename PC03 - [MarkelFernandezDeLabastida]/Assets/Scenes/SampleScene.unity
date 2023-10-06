@@ -570,7 +570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00029642566, y: 8.100098}
+  m_AnchoredPosition: {x: 0.00037305348, y: 8.100098}
   m_SizeDelta: {x: -4, y: 119}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &785976694
@@ -996,14 +996,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520029542}
         m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
-        m_MethodName: CambiarEscena4
-        m_Mode: 1
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Escena4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &864977966
@@ -1353,14 +1353,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520029542}
         m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
-        m_MethodName: CambiarEscena1
-        m_Mode: 1
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Escena1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1072333881
@@ -1801,14 +1801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd7fdc59c341834295202696a6bda61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Escena1: {fileID: 0}
-  Escena2: {fileID: 0}
-  Escena3: {fileID: 0}
-  Escena4: {fileID: 0}
-  NombreEscena1: Escena1
-  NombreEscena2: Escena2
-  NombreEscena3: Escena3
-  NombreEscena4: Escena4
 --- !u!4 &1520029543
 Transform:
   m_ObjectHideFlags: 0
@@ -2079,14 +2071,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520029542}
         m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
-        m_MethodName: CambiarEscena2
-        m_Mode: 1
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Escena2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2031977436
@@ -2212,14 +2204,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520029542}
         m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
-        m_MethodName: CambiarEscena3
-        m_Mode: 1
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Escena3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2109050435

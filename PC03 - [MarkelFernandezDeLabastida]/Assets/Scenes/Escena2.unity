@@ -207,15 +207,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1583381635}
-        m_TargetAssemblyTypeName: EscenaVolver, Assembly-CSharp
-        m_MethodName: EscenaPrincipal
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UI_Script, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: SampleScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &907561975
@@ -725,10 +725,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583381633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b1dd1b2819841946b35f02f334f235b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dd7fdc59c341834295202696a6bda61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: SampleScene
 --- !u!1 &1920141373
 GameObject:
   m_ObjectHideFlags: 0
