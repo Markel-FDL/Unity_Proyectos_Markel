@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ObjectMovement : MonoBehaviour
@@ -86,7 +87,8 @@ public class ObjectMovement : MonoBehaviour
             _audioSource.clip = clip[1];
             _audioSource.Play();
             Time.timeScale = 0;
-            gameOver.Setup();
+            SceneManager.LoadScene("GameOver");
+            //gameOver.Setup();
         }
         
     }
