@@ -1478,7 +1478,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 397455425}
         m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
-        m_MethodName: CambiarEscena
+        m_MethodName: ReiniciarJuego
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

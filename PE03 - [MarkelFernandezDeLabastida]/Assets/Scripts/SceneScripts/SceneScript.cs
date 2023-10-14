@@ -23,6 +23,11 @@ public class SceneScript : MonoBehaviour
         SceneManager.LoadScene(escena);
     }
 
+    public void ReiniciarJuego(String escena)
+    {
+        SceneManager.LoadSceneAsync(escena);
+    }
+
     public void VolverJuego()
     {
         Time.timeScale = 1;

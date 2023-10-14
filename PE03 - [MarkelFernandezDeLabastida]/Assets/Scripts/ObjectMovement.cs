@@ -24,6 +24,7 @@ public class ObjectMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         // 
         RigidBody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
