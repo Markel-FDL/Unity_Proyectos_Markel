@@ -23,6 +23,12 @@ public class SceneScript : MonoBehaviour
         SceneManager.LoadScene(escena);
     }
 
+    public void VolverJuego()
+    {
+        Time.timeScale = 1;
+        
+    }
+
     public void Salir()
     {
         Application.Quit();

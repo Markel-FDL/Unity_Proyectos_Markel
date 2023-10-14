@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        var json = PlayerPrefs.GetString("Puntuacion", "{}");
         sd = new ScoreData();
     }
 
@@ -23,6 +25,17 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(Score puntuacion)
     {
         sd.scores.Add(puntuacion);
+    }
+
+    private void OnDestroy()
+    {
+        SaveScore();
+    }
+
+    public void SaveScore()
+    {
+        var json = JsonUtility.ToJson(sd);
+        PlayerPrefs.SetString("Puntuacion", json);
     }
 
     // Update is called once per frame

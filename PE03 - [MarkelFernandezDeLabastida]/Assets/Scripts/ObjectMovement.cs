@@ -18,7 +18,7 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] private float velocidadMovimiento;
     [SerializeField] private AudioClip[] clip = new AudioClip[2];
     [SerializeField] public int vidas;
-    [SerializeField] private Game_Over_Script gameOver;
+    [SerializeField] private PauseScripts pause;
     
     
     // Start is called before the first frame update
@@ -39,8 +39,13 @@ public class ObjectMovement : MonoBehaviour
         posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Mueve entre puntos
         direccion = Vector2.Lerp(transform.position, posicionRaton, velocidadMovimiento);
-        
-        
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape");
+            Time.timeScale = 0;
+            pause.Setup();
+        }
     }
 
     private void FixedUpdate()
@@ -79,6 +84,7 @@ public class ObjectMovement : MonoBehaviour
             _audioSource.Play();
             _audioSource.loop = false;
             vidas--;
+            //pause.Setup();
             Debug.Log(vidas);
             StartCoroutine("Invencible");
 
@@ -88,10 +94,12 @@ public class ObjectMovement : MonoBehaviour
             _audioSource.Play();
             Time.timeScale = 0;
             SceneManager.LoadScene("GameOver");
-            //gameOver.Setup();
+            //pause.Setup();
         }
         
     }
+    
+    
 
     IEnumerator Invencible()
     {
