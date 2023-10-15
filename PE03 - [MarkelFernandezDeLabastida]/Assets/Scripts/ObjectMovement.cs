@@ -98,6 +98,12 @@ public class ObjectMovement : MonoBehaviour
             //pause.Setup();
         }
         
+        if (enemigo.gameObject.CompareTag("Vida++"))
+        {
+            vidas++;
+            Destroy(enemigo.gameObject);
+        }
+        
     }
     
     

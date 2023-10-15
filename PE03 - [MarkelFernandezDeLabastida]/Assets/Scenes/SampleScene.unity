@@ -2000,6 +2000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objeto: {fileID: 7339520463915174697, guid: 7de731eacf47c2b4481c55e9ba53f66c, type: 3}
   powerUp: {fileID: 709711039660681447, guid: 53a7c983e73f5ac489d9b3fcf2fe04b5, type: 3}
+  vida: {fileID: 4473767722293674050, guid: 03a6adcf46fcae8418f25aab2e64bddb, type: 3}
 --- !u!1 &1614198046
 GameObject:
   m_ObjectHideFlags: 0
