@@ -19,11 +19,14 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] private AudioClip[] clip = new AudioClip[2];
     [SerializeField] public int vidas;
     [SerializeField] private PauseScripts pause;
-    
+    public float tiempo;
     
     // Start is called before the first frame update
     void Start()
     {
+        tiempo = (Mathf.Round(Time.timeScale * 100 / 100));
+        
+        
         Time.timeScale = 1;
         // 
         RigidBody = GetComponent<Rigidbody2D>();
@@ -94,6 +97,8 @@ public class ObjectMovement : MonoBehaviour
             _audioSource.clip = clip[1];
             _audioSource.Play();
             Time.timeScale = 0;
+            StateNameScript.tiempo = tiempo;
+            ScoreData.scores.Add(new Score((int)tiempo));
             SceneManager.LoadScene("GameOver");
             //pause.Setup();
         }

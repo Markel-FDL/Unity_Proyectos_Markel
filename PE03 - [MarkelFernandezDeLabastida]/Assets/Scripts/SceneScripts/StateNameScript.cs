@@ -1,21 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class ScoreData
+public class StateNameScript : MonoBehaviour
 {
-
-    public static List<Score> scores;
-
-    public ScoreData()
-    {
-        scores = new List<Score>();
-    }
-    
-    
-    
+    public static float tiempo;
     
     // Start is called before the first frame update
     void Start()

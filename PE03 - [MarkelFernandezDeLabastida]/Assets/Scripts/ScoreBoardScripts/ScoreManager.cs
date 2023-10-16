@@ -19,13 +19,13 @@ public class ScoreManager : MonoBehaviour
 
     public IEnumerable<Score> GetHighScores()
     {
-        return sd.scores.OrderByDescending(x => x.puntuacion);
+        return ScoreData.scores.OrderByDescending(x => x.puntuacion);
     }
 
-    public void AddScore(Score puntuacion)
-    {
-        sd.scores.Add(puntuacion);
-    }
+    // public void AddScore(Score puntuacion)
+    // {
+    //     sd.scores.Add(puntuacion);
+    // }
 
     private void OnDestroy()
     {
