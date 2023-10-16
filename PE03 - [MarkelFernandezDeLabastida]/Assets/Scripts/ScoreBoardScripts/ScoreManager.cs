@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    private ScoreData sd;
+    public ScoreData sd;
     
     
     
@@ -14,18 +14,18 @@ public class ScoreManager : MonoBehaviour
     void Awake()
     {
         var json = PlayerPrefs.GetString("Puntuacion", "{}");
-        sd = new ScoreData();
+        sd = JsonUtility.FromJson<ScoreData>(json);
     }
 
     public IEnumerable<Score> GetHighScores()
     {
-        return ScoreData.scores.OrderByDescending(x => x.puntuacion);
+        return sd.scores.OrderByDescending(x => x.puntuacion);
     }
 
-    // public void AddScore(Score puntuacion)
-    // {
-    //     sd.scores.Add(puntuacion);
-    // }
+    public void AddScore(Score puntuacion)
+    {
+        sd.scores.Add(puntuacion);
+    }
 
     private void OnDestroy()
     {

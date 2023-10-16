@@ -20,12 +20,11 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] public int vidas;
     [SerializeField] private PauseScripts pause;
     public float tiempo;
+    //public ScoreManager scoreManager;
     
     // Start is called before the first frame update
     void Start()
     {
-        tiempo = (Mathf.Round(Time.timeScale * 100 / 100));
-        
         
         Time.timeScale = 1;
         // 
@@ -39,6 +38,8 @@ public class ObjectMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        tiempo += (Time.deltaTime * 100 / 100);
+        Debug.Log(tiempo);
         // Recoge la posición del raton en el mundo, no en pixels
         posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Mueve entre puntos
@@ -97,8 +98,9 @@ public class ObjectMovement : MonoBehaviour
             _audioSource.clip = clip[1];
             _audioSource.Play();
             Time.timeScale = 0;
+            
             StateNameScript.tiempo = tiempo;
-            ScoreData.scores.Add(new Score((int)tiempo));
+            //scoreManager.AddScore(new Score((int)tiempo));
             SceneManager.LoadScene("GameOver");
             //pause.Setup();
         }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateNameScript : MonoBehaviour
+public class StateNameScript
 {
     public static float tiempo;
     

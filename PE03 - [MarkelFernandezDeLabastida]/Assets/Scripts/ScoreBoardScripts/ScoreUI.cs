@@ -11,8 +11,7 @@ public class ScoreUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreData.scores.Add(new Score((int)StateNameScript.tiempo));
-        ScoreData.scores.Add(new Score(8));
+        scoreManager.AddScore(new Score((int)StateNameScript.tiempo));
         
         var scores = scoreManager.GetHighScores().ToArray();
         for (int i = 0; i < scores.Length; i++)

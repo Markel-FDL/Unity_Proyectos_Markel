@@ -7,7 +7,7 @@ using UnityEngine;
 public class ScoreData
 {
 
-    public static List<Score> scores;
+    public List<Score> scores;
 
     public ScoreData()
     {
