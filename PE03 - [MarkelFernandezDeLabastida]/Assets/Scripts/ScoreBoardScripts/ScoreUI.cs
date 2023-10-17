@@ -14,7 +14,7 @@ public class ScoreUI : MonoBehaviour
         scoreManager.AddScore(new Score((int)StateNameScript.tiempo));
         
         var scores = scoreManager.GetHighScores().ToArray();
-        for (int i = 0; i < scores.Length; i++)
+        for (int i = 0; i < 5; i++)
         {
             var row = Instantiate(rowUI, transform).GetComponent<RowUI>();
             row.posicion.text = (i + 1).ToString();

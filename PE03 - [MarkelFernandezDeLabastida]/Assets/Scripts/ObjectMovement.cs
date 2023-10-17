@@ -39,7 +39,6 @@ public class ObjectMovement : MonoBehaviour
     void Update()
     {
         tiempo += (Time.deltaTime * 100 / 100);
-        Debug.Log(tiempo);
         // Recoge la posición del raton en el mundo, no en pixels
         posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Mueve entre puntos
