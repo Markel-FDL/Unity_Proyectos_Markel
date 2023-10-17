@@ -18,7 +18,15 @@ public class ScoreUI : MonoBehaviour
         {
             var row = Instantiate(rowUI, transform).GetComponent<RowUI>();
             row.posicion.text = (i + 1).ToString();
-            row.puntuacion.text = scores[i].puntuacion.ToString();
+            if (scores[i] == null)
+            {
+                row.puntuacion.text = 0.ToString();
+            }
+            else
+            {
+                row.puntuacion.text = scores[i].puntuacion.ToString();
+            }
+            
         }
     }
 
