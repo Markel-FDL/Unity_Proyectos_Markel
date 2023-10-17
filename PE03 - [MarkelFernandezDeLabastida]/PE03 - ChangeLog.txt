@@ -1,0 +1,37 @@
+ ChangeLog - PE02 [MarkelFernandezDeLabastida]
+
+
+- 29 de Sep -> Crear proyecto a partir del anterior
+
+- 29 al 2 de Sep -> - MEJORAS RESPECTO AL PROYECTO ANTERIOR: 
+			- Mejora de movimiento y comportamiento de los enemigos del proyecto anterior
+			- Solucionado el problema de acotar el escenario (Tenia dos soluciones, he eliminado la peor)
+			- Solucionado las colisiones de las paredes
+			- Mejorados los nombres de los objetos para mejor comprensión y lectura del proyecto
+			- nombre del archivo corregido
+		    - AÑADIDOS:
+			- Sonidos incluidos en:
+				- Rebotes de los enemigos
+				- Jugador y enemigos colisionan
+				- Game over
+				- Jugador y power up colisionan
+			- Power up creado donde al colisionar con el jugador reduzca su escala
+			- El jugador tiene 3 vidas antes de perder y saltar la pantalla de game over
+			- Se han integrado tanto las vidas del jugador como el tiempo transcurrido de la partida
+			- Se ha creado el .exe en la carpera "Build"  
+
+
+ChangeLog - PE03 [MarkelFernandezDeLabastida]
+
+- 6 de Oct -> Crear proyecto a partir del anterior
+
+- 6 al 17 de Oct -> - MEJORAS RESPECTO AL PROYECTO ANTERIOR:
+			- Los enemigos no spawnean encima del jugador
+		    - AÑADIDOS:
+			- 2 nuevas interfaces (el de Game over ya estaba creada)
+				- Menú principal: 2 botones -> Iniciar juego y Salir
+				- Pausa: 2 botones -> Continuar y Volver al menú principal
+			- Sistema de puntuación por tiempo
+			- Se guarda la puntuación del jugador y se muestra el top 5 (ScoreBoard) de mejores puntuaciones
+			- Nueva funcionalidad: Un orbe que te proporciona 1 vida más
+			- Se ha creado el .exe en la carpera "Build"  
