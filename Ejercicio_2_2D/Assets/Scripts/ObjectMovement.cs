@@ -9,6 +9,7 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D RigidBody;
     [SerializeField] private Vector2 direccion;
     [SerializeField] private float velocidadMovimiento;
+    [SerializeField] private Game_Over_Script gameOver;
     
     
     // Start is called before the first frame update
@@ -25,10 +26,22 @@ public class ObjectMovement : MonoBehaviour
         posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Mueve entre puntos
         direccion = Vector2.Lerp(transform.position, posicionRaton, velocidadMovimiento);
+        
+        
     }
 
     private void FixedUpdate()
     {
         RigidBody.MovePosition(direccion);
+    }
+
+    private void OnCollisionEnter2D(Collision2D enemigo)
+    {
+        if (enemigo.gameObject.CompareTag("Enemy"))
+        {
+            gameOver.Setup();
+            // Destroy(enemigo.gameObject);
+            // Application.Quit();
+        }
     }
 }
